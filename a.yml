@@ -1,5 +1,6 @@
----
- tasks:
+- name: Just a workaround
+  hosts: all
+  tasks:
   - name: Prepare System(s)
     ansible.builtin.import_playbook: 01_config_system.yml
 
