@@ -1,6 +1,7 @@
 ---
-- name: Prepare System(s)
-  ansible.builtin.import_playbook: 01_config_system.yml
+tasks:
+  - name: Prepare System(s)
+    ansible.builtin.import_playbook: 01_config_system.yml
 
-- name: Configure Application
-  ansible.builtin.import_playbook: 02_config_application.yml
+  - name: Configure Application
+    ansible.builtin.import_playbook: 02_config_application.yml
